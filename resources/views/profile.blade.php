@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    Your About Page {{$myvariable}}
+                    Your About Page {{$users}}
                 </div>
             </div>
         </div>
