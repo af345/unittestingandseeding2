@@ -32,9 +32,6 @@ class HomeController extends Controller
     public function profile()
     {
 
-        $user = User::find(2);
-
-        $user->delete();
 
         $users = User::all();
 
