@@ -33,7 +33,13 @@ class HomeController extends Controller
     {
 
 
-        $users = User::all();
+        // $users = User::all();
+        $users = User::where('user', 1)
+            ->orderBy('name', 'desc')
+            ->take(10)
+            ->get();
+
+        dd($users->count());
 
         return view('profile', ['users' => $users]);
     }
